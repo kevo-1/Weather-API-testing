@@ -12,16 +12,16 @@ export class AppController {
   }
 }
 
-@Controller('weather')
-export class WeatherController {
-  constructor(private readonly appService: AppService) {}
+// @Controller('weather')
+// export class WeatherController {
+//   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getDefaultWeather(@Res() res: Response): void {
-    const msg = this.appService.getDefaultWeather();
+//   @Get()
+//   getDefaultWeather(@Res() res: Response): void {
+//     const msg = this.appService.getDefaultWeather();
 
-    res.status(HttpStatus.OK).json({
-      msg,
-    });
-  }
-}
+//     res.status(HttpStatus.OK).json({
+//       msg,
+//     });
+//   }
+// }
